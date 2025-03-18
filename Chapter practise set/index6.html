@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Practise Set 4</title>
+</head>
+<body>
+  <script>
+    function isOdd (number) {
+      let rem = number % 2;
+      let isOdd = rem === 1;
+      return isOdd;
+    }
+    console.log( isOdd (4));
+    console.log( isOdd (5));
+    console.log( isOdd (6));
+    console.log( isOdd (7));
+
+    function larger(num1, num2) {
+      if (num1 > num2){
+        return num1;
+      } else if (num1 < num2){
+        return num2;
+      } else {
+        return `I'm sorry, these numbers are equal`;
+      }
+    }
+    console.log(larger(7, 10));
+    console.log(larger(100, 20));
+    console.log(larger(55, 55));
+
+    function fahrenheitConvertor(celsius) {
+      f = (9/5)*celsius + 32 ;
+      return f ;
+    }
+    console.log(fahrenheitConvertor(45));
+    console.log(fahrenheitConvertor(33));
+    console.log(fahrenheitConvertor(27));
+    console.log(fahrenheitConvertor(0));
+    console.log(fahrenheitConvertor(-2));
+  </script>
+</body>
+</html>
